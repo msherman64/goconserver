@@ -27,7 +27,7 @@ LDFLAGS=-ldflags "-X main.Version=${VERSION} -X main.BuildTime=${BUILD_TIME} -X 
 
 all: build
 deps:
-	go get github.com/Masterminds/glide
+	go install github.com/Masterminds/glide@latest
 	${GOPATH}/bin/glide install
 
 link:
